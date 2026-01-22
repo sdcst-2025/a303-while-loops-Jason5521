@@ -30,3 +30,22 @@ Enter password: 1234
 Access denied
 Too many failed attempts. Access denied.
 """
+
+adminname = "admin"
+adminpassword = "12345"
+
+attempts = 3
+Notloggedin = True
+while Notloggedin == True:
+    username = str(input("Enter username: "))
+    password = str(input("Enter password: "))
+    if username != adminname or password != adminpassword:
+        attempts = attempts - 1
+        print("Access denied.")
+        if attempts == 0:
+            print("Too many failed attempts. Access denied.")
+            break
+    if username == adminname and password == adminpassword:
+        Notloggedin = False
+    if Notloggedin == False:
+        print("Access granted.")
