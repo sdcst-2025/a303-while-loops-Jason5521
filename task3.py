@@ -47,11 +47,12 @@ when do you want to stop repeating = even integer
 
 
 """
-
-n = int(input("Enter a number: "))
-m = n % 2
-if m != 0:
-    print("that is not an even integer.")
-elif m == 0:
-    print("that is an even integer.")
-
+eveninteger = False
+while eveninteger == False:
+    n = int(input("Enter a number: "))
+    m = n % 2
+    if m != 0:
+        print("that is not an even integer.")
+    elif m == 0:
+        eveninteger = True
+        print("that is an even integer.")
