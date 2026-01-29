@@ -20,6 +20,5 @@ Enter a number: 4
 m = 0
 n = int(input("Enter a number:"))
 while m != n * 12:
-    m = n + n
-    m = n + n
+    m = m + n
     print(m)

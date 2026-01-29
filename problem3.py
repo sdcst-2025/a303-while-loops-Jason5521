@@ -13,3 +13,7 @@ after the number in the sequence is greater than 100:
 Example:
 1 1 2 3 5 ...
 """
+m = int(input("Enter a 1, please? "))
+while m < 100:
+    m = m + m
+    print(m)
